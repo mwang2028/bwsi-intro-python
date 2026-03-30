@@ -32,7 +32,7 @@ class TicTacToe:
         """Init instance of Tic Tac Toe."""
         self.board = np.zeros([3,3])
         self.valid_moves = [move.value for move in MoveType]
-        self.print_instrutions()
+        self.print_instructions()
     
     def print_instructions(self):
         """Print instructions."""
