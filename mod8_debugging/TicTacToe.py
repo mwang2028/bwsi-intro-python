@@ -36,7 +36,7 @@ class TicTacToe:
     
     def print_instructions(self):
         """Print instructions."""
-        valid_moves_str = ', '.join([MoveType(moev).name for move in self.valid_moves])
+        valid_moves_str = ', '.join([MoveType(move).name for move in self.valid_moves])
         print(f"Welcome to Tic Tac Toe! \nUser input should be one of the moves below: \n{valid_moves_str}")
     
     def __update_valid_moves(self):
@@ -64,7 +64,7 @@ class TicTacToe:
             print("Please enter a valid move.")
             self.__user_take_turn()
         
-    def __computer_take_turn():
+    def __computer_take_turn(self):
         """Automate the computer's turn."""
         move_index = random.choice(self.valid_moves)
         self.board[move_index] = CellStatus.COMPUTER.value
